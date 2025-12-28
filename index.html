@@ -4,28 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kanzakidev</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <body>
     <div>
-        <h1>Ryo Kanzaki</h1>
-        <h3>Junior Frontend Developer & SysAdmin (learning)</h3>
-        <h2>About</h2>
-        <p>Hello! I'm a curious learner, passionate about coding little projects and discovering new tech 💻✨.</p>
-        <h2>Skills</h2>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-            <li>Linux / SysAdmin basics</li>
-        </ul>
-        <h2>Projects</h2>
-        <p>No large projects yet, but actively learning and experimenting 💻✨</p>
-        <h2>Contact</h2>
-        <ul>
+        <!-- Profile -->
+        </section>
+            <!-- logo and name div -->
+            <div class="logoanddiv">
+                <img class="githublogo" src="https://github.com/kanzakidev.png" alt="Ryo Kanzaki" width="150" height="150">
+                <h1 class="name">Ryo Kanzaki</h1>
+            </div>
+            <!-- descriptions -->
+            <h3>Junior Frontend Developer & SysAdmin (learning)</h3>
+        </section>
+
+        <!-- About -->
+        <section>
+            <h2 class="hcolor">About</h2>
+            <p>Hello! I'm a curious learner, passionate about coding little projects and discovering new tech 💻✨.</p>
+        </section>
+
+        <!-- Skills -->
+        <section>
+        <h2 class="hcolor">Skills</h2>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>Linux / SysAdmin basics</li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2 class="hcolor">Projects</h2>
+            <p>No large projects yet, but actively learning and experimenting 💻✨</p>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2 class="hcolor">Contact</h2>
             <p>Feel free to reach out 💌</p>
-            <li>Email: ryoda@test.com</li>
-            <li>Telegram: @kanzakidev</li>
-        </ul>
+            <ul>
+                <li>Email: ryoda@test.com</li>
+                <li>Telegram: @kanzakidev</li>
+            </ul>
+        </section>
+
     </div>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: comfortaa, sans-serif;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .hcolor {
+            color: orange;
+        }
+        .name {
+            font-size: 45px;
+        }
+        .logoanddiv {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .githublogo {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+    </style>
 </body>
 </html>
