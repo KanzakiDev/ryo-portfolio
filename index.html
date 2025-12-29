@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kanzakidev</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <meta name="description" content="Ryo Kanzaki — junior front-end developer and system administrator. Portfolio prototype.">
+    <link rel="icon" href="https://github.com/kanzakidev.png">
 </head>
 <body>
     <main>
         <div>
             <!-- Profile -->
-            </section>
-                <!-- logo and name div -->
+            <section>
                 <div class="logoanddiv">
-                    <img class="githublogo" src="https://github.com/kanzakidev.png" alt="Ryo Kanzaki" width="150" height="150">
+                    <img class="githublogo" src="https://github.com/kanzakidev.png" alt="Ryo Kanzaki">
                     <h1 class="name">Ryo Kanzaki</h1>
                 </div>
-                <!-- descriptions -->
                 <h3>Junior Frontend Developer & SysAdmin (learning)</h3>
             </section>
+
 
             <!-- About -->
             <section>
@@ -38,10 +39,26 @@
                 </ul>
             </section>
 
+            <!-- Now -->
+            <section>
+                <h2 class="hcolor">Now</h2>
+                <p>
+                    Currently learning front-end development and Linux system administration,
+                    building small web prototypes.
+                </p>
+            </section>
+
+
             <!-- Projects -->
             <section>
                 <h2 class="hcolor">Projects</h2>
-                <p>No large projects yet, but actively learning and experimenting 💻✨</p>
+                <ul>
+                    <li>
+                        <strong>Portfolio Prototype</strong> — this website
+                        (<a href="https://github.com/kanzakidev/ryo-portfolio">source</a>)
+                    </li>
+                </ul>
+
             </section>
 
             <!-- Contact -->
@@ -59,7 +76,7 @@
 
 
     <footer>
-        <p style="text-align: center;">&copy; 2025 Ryo Kanzaki - — Prototype</p>
+        <p style="text-align: center;">&copy; 2025 Ryo Kanzaki — Prototype</p>
     </footer>
 
 
@@ -77,6 +94,10 @@
         }
         section {
             margin-bottom: 40px;
+            transition: opacity 0.2s ease;
+        }
+        section:hover {
+            opacity: 0.95;
         }
         .hcolor {
             color: orange;
