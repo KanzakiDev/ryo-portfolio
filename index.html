@@ -12,7 +12,7 @@
     <main>
         <div>
             <!-- Profile -->
-            <section>
+            <section class="hero">
                 <div class="logoanddiv">
                     <img class="githublogo" src="https://github.com/kanzakidev.png" alt="Ryo Kanzaki">
                     <h1 class="name">Ryo Kanzaki</h1>
@@ -24,7 +24,7 @@
             <!-- About -->
             <section>
                 <h2 class="hcolor">About</h2>
-                <p>Hello! I'm a curious learner, passionate about coding little projects and discovering new tech 💻✨.</p>
+                <p>I’m a curious learner who enjoys building small web projects and exploring how things work under the hood, especially on Linux.</p>
             </section>
 
             <!-- Skills -->
@@ -34,7 +34,7 @@
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>JavaScript</li>
-                    <li>Linux (Arch, CLI)</li>
+                    <li>Linux (Arch, CLI, basics)</li>
                     <li>SysAdmin basics</li>
                 </ul>
             </section>
@@ -43,8 +43,7 @@
             <section>
                 <h2 class="hcolor">Now</h2>
                 <p>
-                    Currently learning front-end development and Linux system administration,
-                    building small web prototypes.
+                    Currently learning front-end development and Linux system administration by building small projects.
                 </p>
             </section>
 
@@ -94,9 +93,15 @@
         }
         section {
             margin-bottom: 40px;
+        }
+
+        section:not(.hero) {
+            border-left: 3px solid orange;
+            padding-left: 15px;
             transition: opacity 0.2s ease;
         }
-        section:hover {
+
+        section:not(.hero):hover {
             opacity: 0.95;
         }
         .hcolor {
@@ -116,7 +121,12 @@
             border-radius: 50%;
             width: 60px;
             height: 60px;
+            transition: transform 0.2s ease;
         }
+        .githublogo:hover {
+            transform: scale(1.05);
+        }
+
         a {
             color: orange;
             text-decoration: none;
@@ -124,6 +134,10 @@
         a:hover {
             text-decoration: underline;
         }
+        p, li {
+            line-height: 1.6;
+        }
+
     </style>
 </body>
 </html>
